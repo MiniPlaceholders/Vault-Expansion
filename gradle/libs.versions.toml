@@ -12,7 +12,7 @@ runtask = "2.1.0"
 miniplaceholders = "2.2.1"
 adventure = "4.14.0"
 
-vault = "1.7"
+vault = "1.7.1"
 
 [libraries]
 
