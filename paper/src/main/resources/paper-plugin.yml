@@ -1,4 +1,4 @@
-name: Example-Expansion
+name: MiniPlaceholders-Vault-Expansion
 version: '${version}'
 author: 4drian3d
 main: io.github.miniplaceholders.expansion.vault.paper.PaperPlugin

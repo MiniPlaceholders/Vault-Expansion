@@ -10,6 +10,7 @@ public sealed abstract class VaultPlaceholder
                 PlayerGroupPrefixPlaceholder,
                 PlayerGroupSuffixPlaceholder,
                 PlayerGroupsPlaceholder,
+                PlayerHasPermission,
                 PlayerInGroupPlaceholder,
                 PlayerInPrimaryGroupPlaceholder,
                 PlayerPrefixPlaceholder,

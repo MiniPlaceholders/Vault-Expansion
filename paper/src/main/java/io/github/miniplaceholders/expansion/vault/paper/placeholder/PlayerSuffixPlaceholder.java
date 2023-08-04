@@ -1,5 +1,6 @@
 package io.github.miniplaceholders.expansion.vault.paper.placeholder;
 
+import io.github.miniplaceholders.api.utils.LegacyUtils;
 import io.github.miniplaceholders.expansion.vault.paper.VaultHook;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.minimessage.Context;
@@ -20,7 +21,10 @@ public final class PlayerSuffixPlaceholder extends VaultPlaceholder {
             final @NotNull Context ctx
     ) {
         final Player player = (Player) audience;
-        final String group = vaultHook().suffix(player);
-        return Tag.preProcessParsed(group);
+        final String suffix = vaultHook().suffix(player);
+        if (queue.hasNext() && queue.pop().isFalse()) {
+            return Tag.preProcessParsed(suffix);
+        }
+        return Tag.inserting(LegacyUtils.parsePossibleLegacy(suffix));
     }
 }
