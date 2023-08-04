@@ -1,7 +1,13 @@
+repositories {
+    maven("https://jitpack.io")
+}
+
 dependencies {
     compileOnly(libs.paper.api)
     compileOnly(libs.miniplaceholders)
-    implementation(projects.exampleExpansionCommon)
+    compileOnly(libs.vault) {
+        isTransitive = false
+    }
 }
 
 tasks {
