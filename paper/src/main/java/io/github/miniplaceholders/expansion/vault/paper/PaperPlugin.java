@@ -37,7 +37,7 @@ public final class PaperPlugin extends JavaPlugin {
             .audiencePlaceholder("in_group", new PlayerInGroupPlaceholder(hook))
             .audiencePlaceholder("in_primary_group", new PlayerInPrimaryGroupPlaceholder(hook))
             .audiencePlaceholder("prefix", new PlayerPrefixPlaceholder(hook))
-            .audiencePlaceholder("suffix", new PlayerPrefixPlaceholder(hook))
+            .audiencePlaceholder("suffix", new PlayerSuffixPlaceholder(hook))
             .build()
             .register();
     }

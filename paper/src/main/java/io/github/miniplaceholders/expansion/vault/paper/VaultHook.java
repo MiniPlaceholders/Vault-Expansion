@@ -15,8 +15,8 @@ public record VaultHook(
         @Nullable Chat chat
 ) {
     public double balance(final @NotNull Player player) {
-        requireNonNull(economy, "there is no valid economic hook");
-        return economy.getBalance(player);
+        requireNonNull(this.economy, "there is no valid economic hook");
+        return this.economy.getBalance(player);
     }
 
     public boolean hasPermission(final @NotNull Player player, final @NotNull String permission) {
