@@ -2,7 +2,7 @@ metadata.format.version = "1.1"
 
 [versions]
 
-paper = "26.2.build.123-stable"
+paper = "26.2.build.133-stable"
 
 runtask = "3.1.0"
 
